@@ -1,6 +1,15 @@
 !(function($) {
   "use strict";
 
+  // Preloader
+  $(window).on('load', function() {
+    if ($('#preloader').length) {
+      $('#preloader').delay(3000).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
+  });
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
@@ -155,6 +164,51 @@
       },
       900: {
         items: 2
+      }
+    }
+  });
+
+  // Service carousel (uses the Owl Carousel library)
+  $(".service-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    dots: false,
+    nav: true,
+    animateOut: 'zoomIn',
+    animateIn: 'fadeIn',
+    smartSpeed: 1200,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
+  });
+
+  // Testimonials carousel (uses the Owl Carousel library)
+  $('.testimonial-carousel').owlCarousel({
+    autoplay: true,
+    loop: true,
+    margin: 20,
+    dots: false,
+    nav: true,
+    smartSpeed: 1000,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
       }
     }
   });
