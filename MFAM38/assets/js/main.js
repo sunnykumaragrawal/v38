@@ -168,6 +168,12 @@
     }
   });
 
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 3000
+  });
+
   // Service carousel (uses the Owl Carousel library)
   $(".service-carousel").owlCarousel({
     autoplay: true,

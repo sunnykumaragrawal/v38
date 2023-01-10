@@ -8,11 +8,9 @@ body {
 }
 
 a {
-  color: #F6214B;
 }
 
 a:hover {
-  color: #0dd3fe;
   text-decoration: none;
 }
 
@@ -103,14 +101,6 @@ a:hover {
 }
 
 #topbar .mylogo h1 span:nth-child(4){
-  color: blue;
-}
-
-#topbar .mylogo h1 span:nth-child(5){
-  color: red;
-}
-
-#topbar .mylogo h1 span:nth-child(6){
   color: blue;
 }
 
@@ -450,6 +440,7 @@ a:hover {
 }
 
 #hero p {
+  font-size: 20px;
   width: 80%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
@@ -619,6 +610,7 @@ section {
 .about-left ul li a{
   color: #fff;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .about-left ul li a i{
@@ -645,6 +637,72 @@ section {
   font-size: 18px;
   line-height: 28px;
 }
+
+/*--------------------------------------------------------------
+# Counters
+--------------------------------------------------------------*/
+.count-left span{
+  text-transform: uppercase;
+}
+
+.count-left h3{
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.count-left p{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.call-box{
+  width: 80px;
+  height: 80px;
+  background-color: #F6214B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-right: 10px;
+}
+
+.call-box i{
+  color: #fff;
+  font-size: 36px;
+}
+
+.count-call h5{
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.count-box{
+  background-color: red;
+  padding: 30px;
+  text-align: center;
+}
+
+.count-box img{
+  max-height: 70px;
+}
+
+.count-box span{
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+
+.count-box p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Resources
@@ -1018,28 +1076,35 @@ section {
 }
 
 .testimonial-author{
+  border: 5px solid #F6214B;
+  border-radius: 10px;
+  width: 90px;
+  height: 90px;
+  margin: 10px auto;
 }
 
 .testimonial-author img{
-  width: 80px !important;
-  height: 80px !important;
   border-radius: 50%;
+}
+
+.testimonial-authordetail h5{
+  font-weight: 700;
+  margin-top: 15px;
 }
 
 .testimonial-content{
   display: flex;
   padding: 40px 20px 20px;
   text-align: center;
-  background-color: #24252D;
-  color: #fff;
   box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
-  border: 6px solid #F6214B;
+  border-radius: 30px;
+  border: 5px solid #F6214B;
 }
 
 .testimonial-content p{
-  font-size: 18px;
+  font-size: 22px;
   font-style: italic;
-  line-height: 30px;
+  font-weight: 500;
 }
 
 .testimonial-content p .quote-left{
