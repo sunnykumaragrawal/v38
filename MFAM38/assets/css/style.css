@@ -120,7 +120,7 @@ a:hover {
 }
 
 #topbar .contact-info a h5{
-  font-weight: bold;
+  font-weight: 800;
 }
 
 #topbar .contact-info a h5 span{
@@ -147,29 +147,6 @@ a:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-#header .logo h1 {
-  font-size: 28px;
-  margin: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-#header .logo h1 a, #header .logo h1 a:hover {
-  color: #354144;
-  text-decoration: none;
-}
-
-#header .logo h1 a span, #header .logo h1 a:hover span {
-  color: #F6214B;
-}
-
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -194,7 +171,7 @@ a:hover {
   transition: 0.3s;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -436,15 +413,16 @@ a:hover {
 #hero h2 {
   margin-bottom: 30px;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 #hero p {
   font-size: 20px;
-  width: 80%;
+  line-height: 30px;
+  width: 50%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin-bottom: 30px;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -505,7 +483,7 @@ a:hover {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 14px 32px;
+  padding: 18px 38px;
   border-radius: 5px;
   transition: 0.5s;
   line-height: 1;
@@ -566,9 +544,10 @@ section {
 }
 
 .section-title span {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 15px;
   text-transform: uppercase;
+  color: #F6214B;
 }
 
 .section-title h2 {
@@ -588,6 +567,34 @@ section {
   .section-title span {
     font-size: 38px;
   }
+}
+
+/*--------------------------------------------------------------
+# Strips
+--------------------------------------------------------------*/
+.strips{
+  padding: 0 0;
+}
+
+.strips svg{
+  background-color: yellow;
+}
+
+path:hover {
+  d: path("M150.1,234.8c-6.6,4.4-13.2,9.7-20.2,13.4c-5.2,2.7-9.6,0.4-13.9-2.5c-4-2.7-8.1-5.4-12.1-8.1c-13.5-9-90.6-60.4-95-63.3c-2.1-1.4-4.7-2.8-6.4-4.8c-3.2-3.7-2.5-8.7-2.5-13.2c0-7.3,0-51.9,0-67c0-4.7,0.7-8.7,4.9-11.8L117.6,2.5c4.3-2.8,8.9-3.5,13.5-0.6c2.7,1.7,5.2,3.5,7.9,5.2c12,8,82.4,54.5,105.2,70.1c7.9,5.4,5.5,17,5.5,25.3c0,16.7,0,56.8,0,60.2c0,8.5-12,13.7-18,17.8L150.1,234.8z");
+}
+
+.strip-content{
+  background-color: #F6214B;
+  text-align: center;
+}
+
+.strip-content h3{
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -628,7 +635,7 @@ section {
 }
 
 .about-content h4{
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -646,8 +653,8 @@ section {
 }
 
 .count-left h3{
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
@@ -665,7 +672,7 @@ section {
   justify-content: center;
   align-items: center;
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .call-box i{
@@ -674,14 +681,15 @@ section {
 }
 
 .count-call h5{
-  font-weight: 700;
-  margin-top: 10px;
+  font-weight: 800;
+  padding-top: 10px;
 }
 
 .count-box{
   background-color: red;
   padding: 30px;
   text-align: center;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
 .count-box img{
@@ -690,14 +698,16 @@ section {
 
 .count-box span{
   font-weight: 700;
-  font-size: 36px;
+  font-size: 42px;
   color: #fff;
+
 }
 
 .count-box p{
   font-size: 18px;
   line-height: 28px;
   color: #fff;
+  font-weight: 500;
 }
 
 @media(max-width: 767px){}
@@ -709,6 +719,8 @@ section {
 --------------------------------------------------------------*/
 .resource-block{
   margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .resource-item {
@@ -826,19 +838,29 @@ section {
 }
 
 .resource-btn{
-  text-align: center;
-  display: none;
+  position: absolute;
+  bottom: 40px;
+  left: -100px;
+  transition: all 0.5s ease-in-out;
+}
+
+.resource-block:hover .resource-btn{
+  left: 30px;
 }
 
 .resource-btn a{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
   background-color: #F6214B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resource-btn a i{
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  word-spacing: 5px;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 14px 26px;
+  font-size: 36px;
 }
 
 /*--------------------------------------------------------------
@@ -870,7 +892,7 @@ section {
 
 .service-left h4{
   color: #000;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .service-right{
@@ -884,6 +906,8 @@ section {
 
 .service-right p{
   color: #fff;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .service-carousel .owl-item {
@@ -896,27 +920,26 @@ section {
 }
 
 .service-carousel .owl-nav{
-  background-color: black;
 }
 
 .service-carousel .owl-nav .owl-prev{
   position: absolute;
-  top: 40%;
-  left: 0;
+  top: calc(50% - 25px);
+  left: 10px;
 }
 
 .service-carousel .owl-nav .owl-next{
   position: absolute;
-  top: 40%;
-  right: 0;
+  top: calc(50% - 25px);
+  right: 10px;
 }
 
 .service-carousel .owl-nav .owl-prev,
 .service-carousel .owl-nav .owl-next{
-  background-color: black;
+  background-color: #fff;
   width: 50px;
   height: 50px;
-  color: #fff;
+  color: #000;
   font-size: 28px;
   font-weight: bold;
   border-radius: 5px;
@@ -924,6 +947,45 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*--------------------------------------------------------------
+# Insurance
+--------------------------------------------------------------*/
+.insurance-box{
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.insurance-box:hover{
+  border: 2px solid #ab7636;
+}
+
+.insurance-box img{
+  max-height: 80px;
+}
+
+@media(max-width: 767px){
+  .insurance-box{
+    margin-bottom: 25px;
+  }
+
+  .insurance-bg{
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .insurance-bg{
+    margin-bottom: 25px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -935,12 +997,26 @@ section {
 }
 
 .recentblogs-content{
+  padding: 20px;
 }
 
 .recentblogs-content h4{
+  font-weight: 800;
 }
 
 .recentblogs-content p{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.recentblogs-author img{
+  max-height: 70px;
+  float: left;
+  margin-right: 15px;
+}
+
+.recentblogs-author h5{
+  font-weight: 800;
 }
 
 /*--------------------------------------------------------------
@@ -1076,8 +1152,6 @@ section {
 }
 
 .testimonial-author{
-  border: 5px solid #F6214B;
-  border-radius: 10px;
   width: 90px;
   height: 90px;
   margin: 10px auto;
@@ -1088,11 +1162,12 @@ section {
 }
 
 .testimonial-authordetail h5{
-  font-weight: 700;
-  margin-top: 15px;
+  font-weight: 800;
+  margin-top: 20px;
 }
 
 .testimonial-content{
+  background-color: yellow;
   display: flex;
   padding: 40px 20px 20px;
   text-align: center;
@@ -1103,8 +1178,14 @@ section {
 
 .testimonial-content p{
   font-size: 22px;
-  font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
+  color: #F6214B;
+  height: 170px;
+  overflow-y: scroll;
+}
+
+.testimonial-content p::-webkit-scrollbar{
+  width: 0;
 }
 
 .testimonial-content p .quote-left{
@@ -1216,3 +1297,38 @@ section {
     right: 0;
   }
 }
+
+/*--------------------------------------------------------------
+# Social Media
+--------------------------------------------------------------*/
+.social-block{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+/*--------------------------------------------------------------
+# Medical Media
+--------------------------------------------------------------*/
+.medical-box{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+}
+
+@media(max-width: 767px){
+  .medical-box{
+    padding: 15px;
+    min-height: auto;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
