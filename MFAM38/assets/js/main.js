@@ -143,6 +143,14 @@
     zIndex: '50'
   });
 
+  // Tooltip function
+  $("[title]").tooltip({
+    delay: { "show": 500, "hide": 10 },
+    offset: '0 10',
+    boundary: 'window',
+    template: '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+  });
+
   // Intro carousel
   var heroCarousel = $("#heroCarousel");
   var heroCarouselIndicators = $("#hero-carousel-indicators");

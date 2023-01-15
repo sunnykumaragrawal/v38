@@ -105,15 +105,10 @@ a:hover {
   display: inline-flex;
 }
 
-#topbar .contact-info a i{
-  width: 50px;
-  height: 50px;
+#topbar .contact-info a img{
+  max-height: 50px;
   margin-right: 12px;
-  font-size: 48px;
   float: left !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #topbar .contact-info a h5{
@@ -168,7 +163,7 @@ a:hover {
   transition: 0.3s;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -210,7 +205,8 @@ a:hover {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #009FFF;
+  background-color: #009FFF;
+  color: #fff;
 }
 
 .nav-menu .drop-down > a:after {
@@ -619,6 +615,50 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Tooltip
+--------------------------------------------------------------*/
+.tooltip-inner {
+  max-width: 100%;
+  padding: 10px 15px;
+  text-align: center;
+  border: 3px solid #009FFF;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before, 
+.bs-tooltip-top .arrow::before {
+  border-width: 14px 10px 0;
+  border-top-color: #009FFF;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, 
+.bs-tooltip-bottom .arrow::before {
+  border-width: 0 10px 14px;
+  border-bottom-color: #009FFF;
+}
+
+@media(max-width: 767px){
+  .tooltip-inner {
+    max-width: 90%;
+    padding: 7px 12px;
+    border: 2px solid #009FFF;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .tooltip{
+    width: 70%;
+  }
+}
+
+/*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
 .about-left ul{
@@ -687,17 +727,13 @@ section {
 .call-box{
   width: 80px;
   height: 80px;
-  background-color: #009FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5px;
   float: left;
   margin-right: 15px;
 }
 
-.call-box i{
-  color: #fff;
-  font-size: 36px;
+.call-box img{
+  max-height: 70px;
 }
 
 .count-call h5{
@@ -706,7 +742,6 @@ section {
 }
 
 .count-box{
-  background-color: red;
   padding: 30px;
   text-align: center;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
@@ -779,7 +814,7 @@ section {
 }
 
 .resource-item:hover img {
-    opacity: 0.6;
+    opacity: 0.8;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
@@ -846,7 +881,7 @@ section {
 }
 
 .resource-item:hover .resource-desc::before {
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.7);
     opacity: 1;
     -webkit-transform: scale3d(1,1,1);
     transform: scale3d(1,1,1);
@@ -1134,10 +1169,16 @@ section {
 }
 
 .doctor-social li a{
-  padding: 10px;
+  padding: 10px 12px;
   margin-right: 10px;
   border-radius: 50%;
+  font-size: 24px;
   border: 2px solid #009FFF;
+}
+
+.doctor-social li a:hover{
+  background-color: #009fff;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1385,8 +1426,12 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+.contact-item{
+  margin-bottom: 40px;
+}
+
 .contact-item img{
-  max-height: 90px;
+  max-height: 70px;
   float: left;
   margin-right: 10px;
 }
