@@ -18,7 +18,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/animate.css" rel="stylesheet">
@@ -68,23 +68,23 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resources</a></li>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#resources">Resources</a></li>
           <li class="drop-down"><a href="">Compliance</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/baa/" target="_blank">BAA</a></li>
+              <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/hipaa/" target="_blank">HIPAA</a></li>
+              <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/nondisclosure/" target="_blank">Non-disclosure</a></li>
             </ul>
           </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Insurance</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Doctors</a></li>
-          <li><a href="#">Faq</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#insurance">Insurance</a></li>
+          <li><a href="#recentblogs">Blogs</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contactus">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -150,11 +150,11 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main id="main" class="section-bg">
 
     <section id="aboutus" class="aboutus">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Why Choose Us</span>
           <h2>HELPING OUR PATIENTS</h2>
         </div>
@@ -162,16 +162,16 @@
           <div class="col-lg-4">
             <div class="about-left">
               <ul>
-                <li style="background-color: green;"><a href="#doctors">Choose A Doctor<i class="icofont-simple-right"></i></a></li>
-                <li style="background-color: red;"><a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank">Request An Appointment<i class="icofont-simple-right"></i></a></li>
-                <li style="background-color: orange;"><a href="#contactus">Find Our Location<i class="icofont-simple-right"></i></a></li>
-                <li style="background-color: blue;"><a href="#services">Medical Services<i class="icofont-simple-right"></i></a></li>
+                <li style="background-color: green;" data-aos="fade-right" data-aos-delay="100"><a href="#doctors">Choose A Doctor<i class="icofont-simple-right"></i></a></li>
+                <li style="background-color: red;" data-aos="fade-right" data-aos-delay="200"><a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank">Request An Appointment<i class="icofont-simple-right"></i></a></li>
+                <li style="background-color: orange;" data-aos="fade-right" data-aos-delay="300"><a href="#contactus">Find Our Location<i class="icofont-simple-right"></i></a></li>
+                <li style="background-color: blue;" data-aos="fade-right" data-aos-delay="400"><a href="#services">Medical Services<i class="icofont-simple-right"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-8">
             <div class="about-carousel owl-carousel">
-              <div class="about-item">
+              <div class="about-item" data-aos="flip-down" data-aos-delay="100">
                 <div class="about-img">
                   <img src="assets/img/about/image1.jpg" class="img-fluid">
                 </div>
@@ -180,7 +180,7 @@
                   <p>Our highly trained physicians and front of office carry out only the highest quality medical services that are of the finest standard.</p>
                 </div>
               </div>
-              <div class="about-item">
+              <div class="about-item" data-aos="flip-down" data-aos-delay="100">
                 <div class="about-img">
                   <img src="assets/img/about/image2.jpg" class="img-fluid">
                 </div>
@@ -189,7 +189,7 @@
                   <p>We pride ourselves on getting to see our patients FAST – taking extra care to ensure you land a same-day appointment with a short <!-- waiting time --></p>
                 </div>
               </div>
-              <div class="about-item">
+              <div class="about-item" data-aos="flip-down" data-aos-delay="100">
                 <div class="about-img">
                   <img src="assets/img/about/image3.jpg" class="img-fluid">
                 </div>
@@ -207,7 +207,7 @@
     <section id="" class="">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 d-flex d-flex-column align-items-center">
+          <div class="col-lg-5 d-flex d-flex-column align-items-center" data-aos="fade-right" data-aos-delay="100">
             <div class="count-left">
               <span>Some Facts</span>
               <h3>#1 Medical Solution To Keep You Healthy </h3>
@@ -222,19 +222,19 @@
           <div class="col-lg-7">
             <div class="row counters">
               <div class="col-lg-6">
-                <div class="count-box mb-lg-4" style="background-color: green;">
+                <div class="count-box mb-lg-4" style="background-color: green;" data-aos="zoom-in" data-aos-delay="100">
                   <div class="count-icon"><img src="assets/img/client/smile.png" class="img-fluid"></div>
                   <span data-toggle="counter-up">232</span>
                   <p>Happy Patients</p>
                 </div>
-                <div class="count-box" style="background-color: red;">
+                <div class="count-box" style="background-color: red;" data-aos="zoom-in" data-aos-delay="300">
                   <div class="count-icon"><img src="assets/img/client/project.png" class="img-fluid"></div>
                   <span data-toggle="counter-up">521</span>
                   <p>Successful Projects</p>
                 </div>
               </div>
               <div class="col-lg-6 d-flex align-items-center w-100">
-                <div class="count-box" style="background-color: orange;">
+                <div class="count-box" style="background-color: orange;" data-aos="zoom-in" data-aos-delay="200">
                   <div class="count-icon"><img src="assets/img/client/experience.png" class="img-fluid"></div>
                   <span data-toggle="counter-up">10</span>
                   <p>Years of experience</p>
@@ -246,7 +246,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -272,7 +272,7 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#about" class="strip-btn btn1"><i class="icofont-arrow-left"></i></a>
+        <a href="#aboutus" class="strip-btn btn1"><i class="icofont-arrow-left"></i></a>
         <h3>Get your message to your patients....reduce paperwork!</h3>
         <a href="#resources" class="strip-btn btn2"><i class="icofont-arrow-right"></i></a>
       </div>
@@ -280,12 +280,12 @@
 
     <section id="resources" class="resources">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Have you visit Our</span>
           <h2>Patient Resource Center</h2>
         </div>
         <div class="row">
-          <div class="col-lg-6 resource-block">
+          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="100">
             <div class="resource-item">
               <img src="assets/img/resources/image1.jpg" class="img-fluid">
               <h4>Request Forms</h4>
@@ -297,7 +297,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/requestform/" target="_blank"><i class="icofont-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block">
+          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="200">
             <div class="resource-item">
               <img src="assets/img/resources/image2.jpg" class="img-fluid">
               <h4>Update Demo</h4>
@@ -309,7 +309,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/updatedemo/" target="_blank"><i class="icofont-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block">
+          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="300">
             <div class="resource-item">
               <img src="assets/img/resources/image3.jpg" class="img-fluid">
               <h4>Authorization Release</h4>
@@ -321,7 +321,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank"><i class="icofont-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block">
+          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="400">
             <div class="resource-item">
               <img src="assets/img/resources/image4.jpg" class="img-fluid">
               <h4>New Patient Forms</h4>
@@ -333,7 +333,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/mfamnewpt/" target="_blank"><i class="icofont-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block">
+          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="500">
             <div class="resource-item">
               <img src="assets/img/resources/image5.jpg" class="img-fluid">
               <h4>Book Appointment</h4>
@@ -345,7 +345,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank"><i class="icofont-arrow-right"></i></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block">
+          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="600">
             <div class="resource-item">
               <img src="assets/img/resources/image6.jpg" class="img-fluid">
               <h4>Patient Portal</h4>
@@ -361,7 +361,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -394,14 +394,14 @@
     </section>
 
     <section id="services" class="services">
-      <div class="section-title">
+      <div class="section-title" data-aos="zoom-in">
         <span>Don't Miss Our</span>
         <h2>Awesome Medical Services</h2>
       </div>
       <div class="container-fluid service-container">
         <div class="service-carousel owl-theme">
           <div class="service-block row">
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="100">
               <div class="row">
                 <div class="col-lg-6 service-left">
                   <div class="service-icon"><img src="assets/img/service/image1.png" class="img-fluid"></div>
@@ -412,7 +412,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="100">
               <div class="row">
                 <div class="col-lg-6 service-left">
                   <div class="service-icon"><img src="assets/img/service/image2.png" class="img-fluid"></div>
@@ -423,7 +423,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="200">
               <div class="row">
                 <div class="col-lg-6 service-left order-lg-2 order-1">
                   <div class="service-icon"><img src="assets/img/service/image3.png" class="img-fluid"></div>
@@ -434,7 +434,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="200">
               <div class="row">
                 <div class="col-lg-6 service-left order-lg-2 order-1">
                   <div class="service-icon"><img src="assets/img/service/image4.png" class="img-fluid"></div>
@@ -447,7 +447,7 @@
             </div>
           </div>
           <div class="service-block row">
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="100">
               <div class="row">
                 <div class="col-lg-6 service-left">
                   <div class="service-icon"><img src="assets/img/service/image5.png" class="img-fluid"></div>
@@ -458,7 +458,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="100">
               <div class="row">
                 <div class="col-lg-6 service-left">
                   <div class="service-icon"><img src="assets/img/service/image6.png" class="img-fluid"></div>
@@ -469,7 +469,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="200">
               <div class="row">
                 <div class="col-lg-6 service-left order-lg-2 order-1">
                   <div class="service-icon"><img src="assets/img/service/image7.png" class="img-fluid"></div>
@@ -480,7 +480,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 service-item">
+            <div class="col-lg-6 service-item" data-aos="flip-down" data-aos-delay="200">
               <div class="row">
                 <div class="col-lg-6 service-left order-lg-2 order-1">
                   <div class="service-icon"><img src="assets/img/service/image8.png" class="img-fluid"></div>
@@ -496,7 +496,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -530,76 +530,84 @@
 
     <section id="insurance" class="insurance">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Make your future healthy</span>
           <h2>Top Medical Insurance</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/01.png" class="img-fluid">
+        <div class="insurance-carousel owl-theme" data-aos="flip-down" data-aos-delay="100">
+          <div class="insurance-item">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/01.png" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/02.png" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/03.png" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/04.png" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/05.jpg" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/06.jpg" class="img-fluid">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/02.png" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/03.png" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/04.png" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/05.jpg" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/06.jpg" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/07.jpg" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/08.png" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/13.jpg" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/10.jpg" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/11.jpg" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="insurance-box">
-              <img src="assets/img/insurance/12.jpg" class="img-fluid">
+          <div class="insurance-item">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/07.jpg" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/08.png" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/13.jpg" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/10.jpg" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/11.jpg" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="insurance-box">
+                  <img src="assets/img/insurance/12.jpg" class="img-fluid">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -633,12 +641,12 @@
 
     <section id="recentblogs" class="recentblogs">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Recent Posts</span>
           <h2>From Our Blog</h2>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100">
             <div class="recentblogs-item">
               <div class="row">
                 <div class="col-md-4 recentblogs-img">
@@ -659,7 +667,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-left" data-aos-delay="200">
             <div class="recentblogs-item">
               <div class="row">
                 <div class="col-md-4 recentblogs-img">
@@ -680,7 +688,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="300">
             <div class="recentblogs-item">
               <div class="row">
                 <div class="col-md-4 recentblogs-img">
@@ -705,7 +713,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -739,12 +747,12 @@
 
     <section id="doctors" class="doctors">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Meet Our Experienced Team</span>
           <h2>Our Dedicated Doctors Team</h2>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="flip-down" data-aos-delay="100">
             <div class="doctor-item">
               <div class="row">
                 <div class="col-lg-6 doctor-img">
@@ -763,7 +771,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="flip-down" data-aos-delay="200">
             <div class="doctor-item">
               <div class="row">
                 <div class="col-lg-6 doctor-img">
@@ -782,7 +790,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="flip-down" data-aos-delay="300">
             <div class="doctor-item">
               <div class="row">
                 <div class="col-lg-6 doctor-img">
@@ -801,7 +809,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="flip-down" data-aos-delay="400">
             <div class="doctor-item">
               <div class="row">
                 <div class="col-lg-6 doctor-img">
@@ -824,7 +832,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -858,20 +866,20 @@
 
     <section id="faq" class="faq">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Have Your Read?</span>
           <h2>Frequently Asked Questions</h2>
         </div>
         <div class="row">
-          <div class="col-lg-5 d-flex justify-content-center align-items-center">
-            <img src="assets/img/faq-bg.png" class="img-fluid">
+          <div class="col-lg-5 d-flex justify-content-center align-items-center order-lg-1 order-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/faq-bg.jpg" class="img-fluid">
           </div>
           <div class="col-lg-7">
             <div class="row">
               <div class="col-lg-12">
                 <div class="faq-list">
                   <ul>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="100">
                       <img src="assets/img/faq.png" class="img-fluid icon-help"> <a data-toggle="collapse" class="collapse" href="#faq-list-1">What is an internist? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                       <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
                         <p>Internist doctors are physicians who specialize in the diagnosis and medical treatment of adults.
@@ -881,7 +889,7 @@
                       </div>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="200">
                       <img src="assets/img/faq.png" class="img-fluid icon-help"> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">What does an internist do? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                       <div id="faq-list-2" class="collapse" data-parent=".faq-list">
                         <p>An internist often works in hospitals caring for patients admitted for medical treatment. Internists
@@ -889,7 +897,7 @@
                       </div>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="300">
                       <img src="assets/img/faq.png" class="img-fluid icon-help"> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">When to see an internal medicine doctor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                       <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                         <p>It's generally recommended that adults see an internal medicine doctor (internist) at least once every
@@ -898,7 +906,7 @@
                       </div>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="400">
                       <img src="assets/img/faq.png" class="img-fluid icon-help"> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Is an internist a family doctor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                       <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                         <p>No, an internist is not a family doctor. An internist is a physician who specializes in the diagnosis
@@ -907,7 +915,7 @@
                       </div>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="500">
                       <img src="assets/img/faq.png" class="img-fluid icon-help"> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Should I see an internal medicine doctor or family practice? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                       <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                         <p>There is no right or wrong answer to this question - it depends on your specific needs and
@@ -919,7 +927,7 @@
                       </div>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="600">
                       <img src="assets/img/faq.png" class="img-fluid icon-help"> <a data-toggle="collapse" href="#faq-list-6" class="collapsed">Do I need an appointment to see the Internal Doctor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                       <div id="faq-list-6" class="collapse" data-parent=".faq-list">
                         <p>
@@ -938,7 +946,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -972,11 +980,11 @@
 
     <section id="testimonials" class="testimonials">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Our Feedback</span>
           <h2>What Are Patient's Saying....</h2>
         </div>
-        <div class="testimonial-carousel owl-theme">
+        <div class="testimonial-carousel owl-theme" data-aos="zoom-in" data-aos-delay="100">
 
           <div class="testimonial-item">
             <div class="testimonial-author">
@@ -1021,7 +1029,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -1053,29 +1061,93 @@
       </div>
     </section>
 
+    <section id="contactus" class="contactus">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-in">
+          <span>Contact Us</span>
+          <h2>Get In Touch</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4" data-aos="flip-down" data-aos-delay="100">
+            <div class="contact-item">
+              <img src="assets/img/contact/icon1.png" class="img-fluid">
+              <h5>Say hello</h5>
+              <p>+888-503-1636</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="flip-down" data-aos-delay="200">
+            <div class="contact-item">
+              <img src="assets/img/contact/icon2.png" class="img-fluid">
+              <h5>Send An Email</h5>
+              <p>support@reviewthatplace.com</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="flip-down" data-aos-delay="300">
+            <div class="contact-item">
+              <img src="assets/img/contact/icon3.png" class="img-fluid">
+              <h5>Our Location</h5>
+              <p>7037 Rose Ave Suite B Orlando FL 32810</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strips" data-aos="flip-up">
+      <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
+          <path d="M-5 100 Q 0 20 5 100 Z
+              M0 100 Q 5 0 10 100
+              M5 100 Q 10 30 15 100
+              M10 100 Q 15 10 20 100
+              M15 100 Q 20 30 25 100
+              M20 100 Q 25 -10 30 100
+              M25 100 Q 30 10 35 100
+              M30 100 Q 35 30 40 100
+              M35 100 Q 40 10 45 100
+              M40 100 Q 45 50 50 100
+              M45 100 Q 50 20 55 100
+              M50 100 Q 55 40 60 100
+              M55 100 Q 60 60 65 100
+              M60 100 Q 65 50 70 100
+              M65 100 Q 70 20 75 100
+              M70 100 Q 75 45 80 100
+              M75 100 Q 80 30 85 100
+              M80 100 Q 85 20 90 100
+              M85 100 Q 90 50 95 100
+              M90 100 Q 95 25 100 100
+              M95 100 Q 100 15 105 100 Z">
+          </path>
+      </svg>
+      <div class="strip-content">
+        <a href="#contactus" class="strip-btn btn1"><i class="icofont-arrow-left"></i></a>
+        <h3>You can follow us on social media platforms!</h3>
+        <a href="#socialmedia" class="strip-btn btn2"><i class="icofont-arrow-right"></i></a>
+      </div>
+    </section>
+
     <section class="socialmedia" id="socialmedia">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <span>Follow Us</span>
           <h2>Social Media Platforms</h2>
         </div>
         <div class="owl-carousel socialmedia-carousel">
-          <div class="social-block">
+          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.youtube.com/user/sansari2" target="_blank"><img src="assets/img/social/youtube.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="social-block">
+          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.google.com/search?rlz=1C1GCEA_enUS878US878&sxsrf=ALeKk0035SPZlyQXIWXYmhwEd0uDnGWMoA%3A1598546999959&ei=N-RHX6SJOu6k_QaZ_angBQ&q=reviewthatplace&oq=reviewthatplace&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIECAAQDTIGCAAQDRAeMgYIABANEB4yBggAEA0QHjIICAAQCBANEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BAgAEEc6BwgjELACECc6CAgAEAgQBxAeUL0vWIs4YN05aABwAXgAgAF5iAHvAZIBAzAuMpgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjkgNvQ67vrAhVuUt8KHZl-ClwQ4dUDCA0&uact=5#lrd=0x88e7775087a21f57:0x568749b03f559c74,1" target="_blank"><img src="assets/img/social/google.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="social-block">
+          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/social/instagram.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="social-block">
+          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/social/twitter.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="social-block">
+          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.yelp.com/" target="_blank"><img src="assets/img/social/yelp.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="social-block">
+          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/social/facebook.png" class="img-fluid" alt=""></a>
           </div>
         </div>
@@ -1085,19 +1157,19 @@
     <section id="medicalmedia" class="medicalmedia pt-0">
       <div class="container">
         <div class="owl-carousel medicalmedia-carousel">
-          <div class="medical-box">
+          <div class="medical-box" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.healthgrades.com/" target="_blank"><img src="assets/img/medical/06.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="medical-box">
+          <div class="medical-box" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.vitals.com/" target="_blank"><img src="assets/img/medical/10.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="medical-box">
+          <div class="medical-box" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.webmd.com/" target="_blank"><img src="assets/img/medical/11.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="medical-box">
+          <div class="medical-box" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.doctor.com/" target="_blank"><img src="assets/img/medical/01.png" class="img-fluid" alt=""></a>
           </div>
-          <div class="medical-box">
+          <div class="medical-box" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.ratemds.com/" target="_blank"><img src="assets/img/medical/08.png" class="img-fluid" alt=""></a>
           </div>
         </div>
@@ -1128,7 +1200,7 @@
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-
+  <script src="assets/vendor/aos/aos.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

@@ -3,11 +3,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  /*font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  */color: #444444;
-}
-
-a {
+  /*font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  color: #444444;
 }
 
 a:hover {
@@ -369,8 +366,7 @@ a:hover {
 #hero {
   width: 100%;
   height: 100vh;
-  /*background-color: rgba(31, 38, 39, 0.8);
-  */overflow: hidden;
+  overflow: hidden;
   position: relative;
   padding: 0;
 }
@@ -531,12 +527,14 @@ a:hover {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+main{overflow: hidden;}
+
 section {
   padding: 60px 0;
 }
 
 .section-bg {
-  background-color: #f2fdff;
+  background-color: #f2fdff /*#f2fdff*/;
 }
 
 .section-title {
@@ -556,17 +554,6 @@ section {
   text-transform: uppercase;
   margin-top: 5px;
   margin-bottom: 60px;
-  color: #354144;
-}
-
-@media (max-width: 575px) {
-  .section-title h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  .section-title span {
-    font-size: 38px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -588,7 +575,6 @@ section {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  transition: all 0.5s ease-in-out;
 }
 
 .strip-content h3{
@@ -597,7 +583,8 @@ section {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   word-spacing: 4px;
-  padding: 10px 15px 20px;
+  padding: 0 15px 20px;
+  margin-top: -8px;
 }
 
 .strip-btn{
@@ -634,8 +621,6 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about-left{}
-
 .about-left ul{
   list-style: none;
   padding-left: 0;
@@ -659,6 +644,7 @@ section {
 }
 
 .about-item{
+  background-color: #fff;
   text-align: center;
   margin: 0 20px 15px;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
@@ -930,7 +916,7 @@ section {
 }
 
 .service-right{
-  background-color: grey;
+  background-color: #009FFF;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -986,46 +972,70 @@ section {
 /*--------------------------------------------------------------
 # Insurance
 --------------------------------------------------------------*/
-.insurance-box{
-  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
-  background-color: #fff;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:20px 15px;
-  margin-bottom: 30px;
-  transition: all 0.5s;
+.insurance-item .col-lg-4{
+  padding: 0 0;
 }
 
-.insurance-box:hover{
-  border: 2px solid #ab7636;
+.insurance-item{
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
+}
+
+.insurance-box{
+  height: 140px;
+  padding:20px 15px;
+  text-align: center;
 }
 
 .insurance-box img{
-  max-height: 80px;
+  max-height: 100px;
 }
 
-@media(max-width: 767px){
-  .insurance-box{
-    margin-bottom: 25px;
-  }
-
-  .insurance-bg{
-    margin-bottom: 20px;
-  }
+.insurance-carousel .owl-item {
+  float: left;
 }
 
-@media(min-width: 768px) and (max-width: 991px){
-  .insurance-bg{
-    margin-bottom: 25px;
-  }
+.insurance-carousel{
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.insurance-carousel .owl-nav{
+}
+
+.insurance-carousel .owl-nav .owl-prev{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.insurance-carousel .owl-nav .owl-next{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.insurance-carousel .owl-nav .owl-prev,
+.insurance-carousel .owl-nav .owl-next{
+  background-color: #009FFF;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------
 # Recent Blogs
 --------------------------------------------------------------*/
 .recentblogs-item{
+  background-color: #fff;
   margin-bottom: 35px;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
   position: relative;
@@ -1370,6 +1380,20 @@ section {
   .testimonial-carousel .owl-nav .owl-next{
     right: 0;
   }
+}
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact-item img{
+  max-height: 90px;
+  float: left;
+  margin-right: 10px;
+}
+
+.contact-item h5{
+  font-weight: 800;
+  padding-top: 15px;
 }
 
 /*--------------------------------------------------------------

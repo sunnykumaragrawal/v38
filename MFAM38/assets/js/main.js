@@ -10,6 +10,16 @@
     }
   });
 
+  // AOS animation
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1200,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
@@ -179,10 +189,29 @@
     autoplay: true,
     dots: false,
     loop: true,
-    dots: false,
     nav: true,
     animateOut: 'slideDown',
     animateIn: 'fadeIn',
+    smartSpeed: 1200,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
+  });
+
+  // Insurance carousel (uses the Owl Carousel library)
+  $(".insurance-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    nav: true,
     smartSpeed: 1200,
     responsive: {
       0: {
