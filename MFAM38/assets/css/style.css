@@ -14,27 +14,125 @@ a:hover {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-.preloader {
-    background-color: #fff;
-    position: fixed;
+#preloader {
     width: 100%;
     height: 100%;
-    z-index: 9999999;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
+    background: #009FFF;
+    z-index: 11000;
+    position: fixed;
+    display: block;
 }
 
-.preloader .preloader-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -70px;
-    margin-top: -70px;
+.pulse {
+  height: 150px;
+  width: 200px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.pulse:after {
+  content: '';
+  display: block;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200px 100px" enable-background="new 0 0 200px 100px" xml:space="preserve"><polyline fill="none" stroke-width="3px" stroke="white" points="2.4,58.7 70.8,58.7 76.1,46.2 81.1,58.7 89.9,58.7 93.8,66.5 102.8,22.7 110.6,78.7 115.3,58.7 126.4,58.7 134.4,54.7 142.4,58.7 197.8,58.7 "/></svg>') 0 0 no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: 2s pulse linear infinite;
+  animation: 2s pulse linear infinite;
+    clip: rect(0, 0, 100px, 0);
+}
+.pulse:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 2px;
+  right: 2px;
+  bottom: 0;
+  top: 16px;
+  margin: auto;
+  height: 3px;
+
 }
 
-.preloader .preloader-img img{
-  max-height: 150px;
-  border-radius: 50%;
+
+@-webkit-keyframes pulse {
+  0% {
+    clip: rect(0, 0, 100px, 0);
+    opacity: 0.4;
+  }
+  4% {
+    clip: rect(0, 66.66667px, 100px, 0);
+    opacity: 0.6;
+  }
+  15% {
+    clip: rect(0, 133.33333px, 100px, 0);
+    opacity: 0.8;
+  }
+  20% {
+    clip: rect(0, 300px, 100px, 0);
+     opacity: 1;
+  }
+
+  80% {
+    clip: rect(0, 300px, 100px, 0);
+     opacity:0;
+  }
+
+  90% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity:0;
+ }
+}
+@keyframes pulse {
+  0% {
+    clip: rect(0, 0, 100px, 0);
+  }
+  4% {
+    clip: rect(0, 66.66667px, 100px, 0);
+  }
+  15% {
+    clip: rect(0, 133.33333px, 100px, 0);
+  }
+  20% {
+    clip: rect(0, 300px, 100px, 0);
+     opacity:1;
+  }
+
+  80% {
+    clip: rect(0, 300px, 100px, 0);
+     opacity:0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    clip: rect(0, 300px, 100px, 0);
+    opacity:0;
+ }
+  
+}
+
+.pulse {
+  text-align : center;
+}
+.pulse i{
+  color: #ffffff;
+  font-size: 38px;
 }
 
 /*--------------------------------------------------------------
@@ -71,11 +169,12 @@ a:hover {
 --------------------------------------------------------------*/
 #topbar {
   background: #fff;
-  padding: 18px 0;
+  padding: 15px 0 10px;
   font-size: 14px;
 }
 
 #topbar .mylogo h1{
+  font-size: 42px;
   font-weight: 900;
   color: #009FFF;
   margin: 0;
@@ -472,13 +571,14 @@ a:hover {
 
 #hero .btn-get-started {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 18px 38px;
   border-radius: 5px;
   transition: 0.5s;
   line-height: 1;
+  text-transform: uppercase;
   margin: 10px;
   color: #fff;
   background: #009FFF;
@@ -563,6 +663,7 @@ section {
   fill: #009FFF;
   width: 100%;
   height: 100px;
+  animation: stripcolor 2s linear infinite;
 }
 
 .strip-content{
@@ -571,6 +672,10 @@ section {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  animation: stripcolor 2s linear infinite;
+}
+
+@keyframes stripcolor {
 }
 
 .strip-content h3{
@@ -579,8 +684,36 @@ section {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   word-spacing: 4px;
-  padding: 0 15px 20px;
+  padding: 5px 10px 20px;
   margin-top: -8px;
+  animation: stripanimate 2s linear infinite;
+}
+
+@keyframes stripanimate {
+  0% {
+    transform: scale(0.9) translateY(0);
+    color: #fff;
+  }
+  20% {
+    transform: scale(0.9) translateY(-10px);
+    color: yellow;
+  }
+  30% {
+    transform: scale(0.9) translateY(10px);
+    color: yellow;
+  }
+  50% {
+    transform: scale(1.0) translateY(-10px);
+    color: yellow;
+  }
+  60% {
+    transform: scale(1.0) translateY(10px);
+    color: yellow;
+  }
+  100% {
+    transform: scale(0.9) translateY(0);
+    color: #fff;
+  }
 }
 
 .strip-btn{
@@ -1080,7 +1213,7 @@ section {
 .recentblogs-btn{
   position: absolute;
   bottom: 20px;
-  right: -100px;
+  right: 20px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1091,16 +1224,19 @@ section {
 .recentblogs-btn a{
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  background-color: #009FFF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.recentblogs-btn a i{
-  color: #fff;
-  font-size: 36px;
+.recentblogs-btn a img{
+  max-height: 50px;
+}
+
+.recentblogs-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .recentblogs-content{
@@ -1112,12 +1248,12 @@ section {
 }
 
 .recentblogs-content p{
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .recentblogs-author img{
-  max-height: 70px;
+  max-height: 50px;
   float: left;
   margin-right: 15px;
 }
@@ -1133,6 +1269,8 @@ section {
   background-color: #fff;
   margin-bottom: 60px;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .doctor-item .doctor-img{
@@ -1209,7 +1347,7 @@ section {
   position: relative;
   font-size: 18px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 800;
   padding: 0 30px 0 45px;
   outline: none;
 }
@@ -1230,8 +1368,8 @@ section {
 }
 
 .faq .faq-list p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 28px;
   margin-bottom: 0;
   padding: 15px 0 0 0;
 }
@@ -1284,6 +1422,7 @@ section {
 
 .testimonial-author img{
   border-radius: 50%;
+  border: 5px solid #009FFF;
 }
 
 .testimonial-authordetail h5{
