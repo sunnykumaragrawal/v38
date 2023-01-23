@@ -36,19 +36,20 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container d-flex">
       <div class="mylogo mr-auto">
-        <h1>
+        <h1><a href="index.html">
           <span>M</span>
           <span>F</span>
           <span>A</span>
           <span>M</span>
+         </a> 
         </h1>
       </div>
       <div class="contact-info">
-        <a href="#">
+        <a href="mailto:support@reviewthatplace.com">
           <img src="assets/img/hero/email.png" class="img-fluid">
           <h5>Send Message<br><span>support@reviewthatplace.com</span></h5>
         </a>
-        <a href="#">
+        <a href="tel:888-503-1636">
           <img src="assets/img/hero/call.png" class="img-fluid">
           <h5>Say Hello<br><span>+888-503-1636</span></h5>
         </a>
@@ -59,12 +60,6 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
-      <div class="logo d-none">
-        <h1 class="text-light"><a href="index.html">My<span>Biz</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -82,7 +77,7 @@
           <li><a href="#insurance">Insurance</a></li>
           <li><a href="#recentblogs">Blogs</a></li>
           <li><a href="#doctors">Doctors</a></li>
-          <li><a href="#faq">Faq</a></li>
+          <li><a href="#faq">Faqs</a></li>
           <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contactus">Contact</a></li>
 
@@ -129,7 +124,7 @@
               <div class="carousel-content text-left">
                 <h2 class="animate__animated animate__fadeInDown">Make An Appointment</h2>
                 <p class="animate__animated animate__adeInUp">Get the healthcare you need in just seconds! Skip the waiting room, the unending telephone calls, and the cascade of protocols regular medical visits require.</p>
-                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get An Appointment</a>
+                <a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get An Appointment</a>
               </div>
             </div>
           </div>
@@ -205,7 +200,7 @@
       </div>
     </section>
 
-    <section id="" class="">
+    <section id="counting" class="counting">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 d-flex d-flex-column align-items-center" data-aos="fade-right" data-aos-delay="100">
@@ -247,7 +242,7 @@
       </div>
     </section>
 
-    <section class="strips" data-aos="flip-up">
+    <section id="strip1" class="strips" data-aos="flip-up">
       <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 85 100" preserveAspectRatio="none">
           <path d="M-5 100 Q 0 20 5 100 Z
               M0 100 Q 5 0 10 100
@@ -273,9 +268,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#aboutus" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#aboutus" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>Get your message to your patients....reduce paperwork!</h3>
-        <a href="#resources" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Let's Start"><i class="icofont-arrow-right"></i></a>
+        <a href="#resources" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Let's Start"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -285,7 +280,7 @@
           <span>Have you visit Our</span>
           <h2>Patient Resource Center</h2>
         </div>
-        <div class="row">
+        <div class="row" style="display: none;" id="resource1">
           <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="100">
             <div class="resource-item">
               <img src="assets/img/resources/image1.jpg" class="img-fluid">
@@ -295,7 +290,7 @@
               </div>
             </div>
             <div class="resource-btn">
-              <a href="https://rtpmedsol.rtpdemo.com/demoforms/requestform/" target="_blank"><i class="icofont-arrow-right"></i></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/requestform/" target="_blank"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
             </div>
           </div>
           <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="200">
@@ -307,9 +302,11 @@
               </div>
             </div>
             <div class="resource-btn">
-              <a href="https://rtpmedsol.rtpdemo.com/demoforms/updatedemo/" target="_blank"><i class="icofont-arrow-right"></i></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/updatedemo/" target="_blank"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
             </div>
           </div>
+        </div>
+        <div class="row" id="resource2">
           <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="300">
             <div class="resource-item">
               <img src="assets/img/resources/image3.jpg" class="img-fluid">
@@ -319,7 +316,9 @@
               </div>
             </div>
             <div class="resource-btn">
-              <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank"><i class="icofont-arrow-right"></i></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank"><img src="assets/img/blog/arrow.png" class="img-fluid" style="transform: rotate(-90deg);" data-toggle="tooltip" title="Upload Records"></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank"><img src="assets/img/blog/arrow.png" class="img-fluid" style="transform: rotate(90deg);" data-toggle="tooltip" title="Download Records"></a>
             </div>
           </div>
           <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="400">
@@ -331,7 +330,7 @@
               </div>
             </div>
             <div class="resource-btn">
-              <a href="https://rtpmedsol.rtpdemo.com/demoforms/mfamnewpt/" target="_blank"><i class="icofont-arrow-right"></i></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/mfamnewpt/" target="_blank"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
             </div>
           </div>
           <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="500">
@@ -343,7 +342,7 @@
               </div>
             </div>
             <div class="resource-btn">
-              <a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank"><i class="icofont-arrow-right"></i></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
             </div>
           </div>
           <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="600">
@@ -355,9 +354,13 @@
               </div>
             </div>
             <div class="resource-btn">
-              <a href=""><i class="icofont-arrow-right"></i></a>
+              <a href=""><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
             </div>
           </div>
+        </div>
+        <div class="row resource-nav">
+          <div class="col-6"><a id="rn-left">Prev</a></div>
+          <div class="col-6 text-right"><a id="rn-right">Next</a></div>
         </div>
       </div>
     </section>
@@ -388,9 +391,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#resources" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#resources" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>Impressed yet? Wait we have lot of things for you!</h3>
-        <a href="https://rtpmedsol.rtpdemo.com/demoadmin/mfamadmin/" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Dashboard"><i class="icofont-arrow-right"></i></a>
+        <a href="https://rtpmedsol.rtpdemo.com/demoadmin/mfamadmin/" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Dashboard"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -523,9 +526,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#services" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#services" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>Need access to your records in patient portal!</h3>
-        <a href="#insurance" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Patient Portal"><i class="icofont-arrow-right"></i></a>
+        <a href="#insurance" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Patient Portal"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -634,9 +637,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#insurance" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#insurance" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>Start reading our amazing blogs here!</h3>
-        <a href="#recentblogs" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Read Now"><i class="icofont-arrow-right"></i></a>
+        <a href="#recentblogs" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Read Now"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -740,9 +743,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#recentblogs" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#recentblogs" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>Try our Resident package for 3 months!</h3>
-        <a href="https://rtpmedicalsolution.com/pricing" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Check Now"><i class="icofont-arrow-right"></i></a>
+        <a href="https://rtpmedicalsolution.com/pricing" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Check Now"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -859,9 +862,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#doctors" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#doctors" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>You can read about some query that people generally ask!</h3>
-        <a href="#faq" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Let's See"><i class="icofont-arrow-right"></i></a>
+        <a href="#faq" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Let's See"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -973,9 +976,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#faq" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#faq" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>Collect and Distribute reviews from your patients!</h3>
-        <a href="https://rtprms.com/rtpmedsol" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="My Listings"><i class="icofont-arrow-right"></i></a>
+        <a href="https://rtprms.com/rtpmedsol" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="My Listings"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -1056,9 +1059,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#testimonials" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#testimonials" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>We’d love to hear about your experience with us!</h3>
-        <a href="https://rtpmedsol.rtpdemo.com/demoforms/survey/" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Take Survey"><i class="icofont-arrow-right"></i></a>
+        <a href="https://rtpmedsol.rtpdemo.com/demoforms/survey/" target="_blank" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Take Survey"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -1127,9 +1130,9 @@
           </path>
       </svg>
       <div class="strip-content">
-        <a href="#contactus" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><i class="icofont-arrow-left"></i></a>
+        <a href="#contactus" class="strip-btn btn1" data-toggle="tooltip" data-placement="bottom" title="Back"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
         <h3>You can follow us on social media platforms!</h3>
-        <a href="#socialmedia" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Follow us"><i class="icofont-arrow-right"></i></a>
+        <a href="#socialmedia" class="strip-btn btn2" data-toggle="tooltip" data-placement="bottom" title="Follow us"><img src="assets/img/blog/arrow.png" class="img-fluid"></a>
       </div>
     </section>
 
@@ -1144,16 +1147,10 @@
             <a href="https://www.youtube.com/user/sansari2" target="_blank"><img src="assets/img/social/youtube.png" class="img-fluid" alt=""></a>
           </div>
           <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
-            <a href="https://www.google.com/search?rlz=1C1GCEA_enUS878US878&sxsrf=ALeKk0035SPZlyQXIWXYmhwEd0uDnGWMoA%3A1598546999959&ei=N-RHX6SJOu6k_QaZ_angBQ&q=reviewthatplace&oq=reviewthatplace&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIECAAQDTIGCAAQDRAeMgYIABANEB4yBggAEA0QHjIICAAQCBANEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BAgAEEc6BwgjELACECc6CAgAEAgQBxAeUL0vWIs4YN05aABwAXgAgAF5iAHvAZIBAzAuMpgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjkgNvQ67vrAhVuUt8KHZl-ClwQ4dUDCA0&uact=5#lrd=0x88e7775087a21f57:0x568749b03f559c74,1" target="_blank"><img src="assets/img/social/google.png" class="img-fluid" alt=""></a>
-          </div>
-          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/social/instagram.png" class="img-fluid" alt=""></a>
           </div>
           <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/social/twitter.png" class="img-fluid" alt=""></a>
-          </div>
-          <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
-            <a href="https://www.yelp.com/" target="_blank"><img src="assets/img/social/yelp.png" class="img-fluid" alt=""></a>
           </div>
           <div class="social-block" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/social/facebook.png" class="img-fluid" alt=""></a>
@@ -1167,6 +1164,12 @@
         <div class="owl-carousel medicalmedia-carousel">
           <div class="medical-box" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.healthgrades.com/" target="_blank"><img src="assets/img/medical/06.png" class="img-fluid" alt=""></a>
+          </div>
+          <div class="medical-block" data-aos="zoom-in" data-aos-delay="100">
+            <a href="https://www.google.com/search?rlz=1C1GCEA_enUS878US878&sxsrf=ALeKk0035SPZlyQXIWXYmhwEd0uDnGWMoA%3A1598546999959&ei=N-RHX6SJOu6k_QaZ_angBQ&q=reviewthatplace&oq=reviewthatplace&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIECAAQDTIGCAAQDRAeMgYIABANEB4yBggAEA0QHjIICAAQCBANEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BAgAEEc6BwgjELACECc6CAgAEAgQBxAeUL0vWIs4YN05aABwAXgAgAF5iAHvAZIBAzAuMpgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjkgNvQ67vrAhVuUt8KHZl-ClwQ4dUDCA0&uact=5#lrd=0x88e7775087a21f57:0x568749b03f559c74,1" target="_blank"><img src="assets/img/medicaal/google.png" class="img-fluid" alt=""></a>
+          </div>
+          <div class="medical-block" data-aos="zoom-in" data-aos-delay="100">
+            <a href="https://www.yelp.com/" target="_blank"><img src="assets/img/medical/yelp.png" class="img-fluid" alt=""></a>
           </div>
           <div class="medical-box" data-aos="zoom-in" data-aos-delay="100">
             <a href="https://www.vitals.com/" target="_blank"><img src="assets/img/medical/10.png" class="img-fluid" alt=""></a>
@@ -1211,7 +1214,23 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script type="text/javascript">
+     $(document).ready(function(){
+      $('#rn-right').css({"backgroundColor":"#2487ce","color":"white"});
+      $('#rn-right').click(function(){
+       $(this).css({"backgroundColor":"#2487ce","color":"white"});
+       $('#rn-left').css({"backgroundColor":"#fff","color":"black"});
+       $('#resource2').show();
+       $('#resource1').hide();
+     })
+      $('#rn-left').click(function(){
+       $(this).css({"backgroundColor":"#2487ce","color":"white"});
+       $('#rn-right').css({"backgroundColor":"#fff","color":"black"});
+       $('#resource1').show();
+       $('#resource2').hide();
+     })
+    })
+  </script>
 </body>
 
 </html>
