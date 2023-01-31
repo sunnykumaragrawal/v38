@@ -161,6 +161,7 @@ a:hover {
   border-radius: 4px;
   background: #009FFF;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 .back-to-top a span{
@@ -649,7 +650,7 @@ section {
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase;
-  color: red;
+  color: yellow;
 }
 
 .aboutus .section-title span,
@@ -935,7 +936,7 @@ section {
 # Resources
 --------------------------------------------------------------*/
 .resource-block{
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -944,7 +945,6 @@ section {
     position: relative;
     float: left;
     overflow: hidden;
-    margin-bottom: 30px;
     height: auto;
     background: #3085a3;
     text-align: center;
@@ -1295,7 +1295,7 @@ section {
 --------------------------------------------------------------*/
 .doctor-item{
   background-color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
 }
 
