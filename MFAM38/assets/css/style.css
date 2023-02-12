@@ -135,6 +135,10 @@ a:hover {
   font-size: 38px;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -172,6 +176,10 @@ a:hover {
 .back-to-top a:hover {
   transform: translate3d(-10px, -10px, 0px);
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Top Bar
@@ -232,6 +240,10 @@ a:hover {
   margin-right: 40px;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -246,6 +258,10 @@ a:hover {
 #header.header-scrolled {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -484,16 +500,6 @@ a:hover {
   position: relative;
 }
 
-/*#hero .carousel-item::before {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}*/
-
 #hero .carousel-container {
   display: flex;
   justify-content: center;
@@ -629,6 +635,10 @@ a:hover {
   }
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -654,7 +664,8 @@ section {
 }
 
 .aboutus .section-title span,
-.socialmedia .section-title span{
+.socialmedia .section-title span,
+.medicalmedia .section-title span{
   color: #009FFF;
 }
 
@@ -670,8 +681,33 @@ section {
 }
 
 .aboutus .section-title h2,
-.socialmedia .section-title h2{
+.socialmedia .section-title h2,
+.medicalmedia .section-title h2{
   color: #000;
+}
+
+@media(max-width: 767px){
+  section {
+    padding: 30px 0;
+  }
+  .section-title span {
+    font-size: 16px;
+  }
+  .section-title h2 {
+    font-size: 24px;
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  section {
+    padding: 50px 0;
+  }
+  .section-title h2 {
+    margin-bottom: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -758,9 +794,6 @@ section {
   }
 }
 
-.strips:hover .strip-btn{
-}
-
 .btn1{
   left: 15px;
   transform: rotate(180deg);
@@ -770,7 +803,59 @@ section {
   right: 15px;
 }
 
-.strip-btn i{
+@media(max-width: 767px){
+  .strip-content h3{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.1px;
+    padding: 0 5px 10px;
+    margin-top: -5px;
+    animation: none;
+  }
+  .strip-btn{
+    top: auto;
+    bottom: -35px;
+  }
+
+  .strip-btn img{
+    max-height: 25px;
+    animation: none;
+  }
+
+  .btn1{
+    left: 10px;
+  }
+
+  .btn2{
+    right: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .strip-content h3{
+    font-size: 22px;
+    line-height: 32px;
+    padding: 0 10px 10px;
+    margin-top: -5px;
+    animation: none;
+  }
+  .strip-btn{
+    top: auto;
+    bottom: -50px;
+  }
+
+  .strip-btn img{
+    max-height: 35px;
+    animation: none;
+  }
+
+  .btn1{
+    left: 15px;
+  }
+
+  .btn2{
+    right: 15px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -866,6 +951,32 @@ section {
   line-height: 28px;
 }
 
+@media(max-width: 767px){
+  .about-left ul li{
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .about-left ul li a{
+    font-size: 18px;
+  }
+
+  .about-item{
+    margin: 30px 20px 0;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .about-left ul li{
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-item{
+    margin: 30px 20px 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Counters
 --------------------------------------------------------------*/
@@ -928,9 +1039,17 @@ section {
   font-weight: 500;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .count-left h3{
+    font-size: 28px;
+  }
+}
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .count-left h3{
+    font-size: 36px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Resources
@@ -1081,6 +1200,35 @@ section {
   padding: 15px 20px;
 }
 
+@media(max-width: 767px){
+  .resource-block{
+    margin-bottom: 20px;
+  }
+
+  .resource-item h4{
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+
+  .resource-btn{
+    bottom: 10px;
+  }
+
+  .resource-block:hover .resource-btn{
+    left: 25px;
+  }
+
+  .resource-btn a img{
+    max-height: 30px;
+  }
+
+  .resource-nav{
+    margin-top: 20px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1166,6 +1314,52 @@ section {
   align-items: center;
 }
 
+@media(max-width: 767px){
+  .service-left{
+    padding: 30px 15px;
+  }
+
+  .service-right{
+    padding: 20px 15px;
+  }
+  .service-block{
+    width: 100%;
+  }
+
+  .service-carousel{
+    padding-bottom: 80px;
+  }
+
+  .service-carousel .owl-nav .owl-prev{
+    top: auto;
+    bottom: 0;
+    left: 0;
+  }
+
+  .service-carousel .owl-nav .owl-next{
+    top: auto;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .service-left{
+    padding: 30px 20px;
+  }
+
+  .service-right{
+    padding: 25px 20px;
+  }
+  .service-carousel .owl-nav .owl-prev{
+    left: 0;
+  }
+
+  .service-carousel .owl-nav .owl-next{
+    right: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Insurance
 --------------------------------------------------------------*/
@@ -1227,6 +1421,10 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Recent Blogs
@@ -1290,6 +1488,21 @@ section {
   font-weight: 800;
 }
 
+@media(max-width: 767px){
+  .recentblogs-item{
+    margin-bottom: 25px;
+  }
+  .recentblogs-content{
+    padding: 20px 20px 20px 30px;
+  }
+
+  .recentblogs-btn a img{
+    max-height: 40px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
@@ -1343,6 +1556,28 @@ section {
 .doctor-social li a:hover{
   background-color: #009fff;
   color: #fff;
+}
+
+@media(max-width: 767px){
+  .doctor-item .doctor-content{
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .doctor-social{
+    justify-content: center;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .doctor-item .doctor-content{
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .doctor-social{
+    justify-content: center;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1556,16 +1791,6 @@ section {
     width: 100%;
   }
 
-  .testimonial-author{
-    width: 85%;
-    padding: 15px;
-  }
-
-  .testimonial-content{
-    padding: 20px 15px 20px;
-    border: 4px solid #009FFF;
-  }
-
   .testimonial-carousel .owl-nav .owl-prev{
     left: 0;
     bottom: 0;
@@ -1608,6 +1833,10 @@ section {
   font-weight: 800;
   padding-top: 15px;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Social Media
@@ -1682,6 +1911,10 @@ section {
     margin-left: 0;
   }
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # All Blogs
