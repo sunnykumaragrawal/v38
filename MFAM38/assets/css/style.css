@@ -559,6 +559,7 @@ a:hover {
 
 #hero .btn-get-started:hover {
   background: #019cbe;
+  border-radius: 10rem;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -667,7 +668,14 @@ section {
 }
 
 .section-bg {
-  background-color: rgba(0, 159, 255, 0.7) /*#f2fdff*/;
+  background-color: rgba(0, 159, 255, 0.7);
+}
+
+.medicalmedia,
+.socialmedia,
+.aboutus,
+.counting{
+  background-color: #f2fdff;
 }
 
 .section-title {
@@ -923,8 +931,6 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.aboutus{background-color: #f2fdff;}
-
 .about-left ul{
   list-style: none;
   padding-left: 0;
@@ -998,8 +1004,6 @@ section {
 /*--------------------------------------------------------------
 # Counters
 --------------------------------------------------------------*/
-.counting{background-color: #f2fdff;}
-
 .count-left span{
   text-transform: uppercase;
 }
@@ -1860,8 +1864,6 @@ section {
 /*--------------------------------------------------------------
 # Social Media
 --------------------------------------------------------------*/
-.socialmedia{background-color: #f2fdff;}
-
 .social-block{
   padding: 30px;
   display: flex;
@@ -1877,8 +1879,6 @@ section {
 /*--------------------------------------------------------------
 # Medical Media
 --------------------------------------------------------------*/
-.medicalmedia{background-color: #f2fdff;}
-
 .medical-box{
   padding: 30px;
   display: flex;
