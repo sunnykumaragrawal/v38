@@ -840,7 +840,7 @@ section {
   }
   .strip-btn{
     top: auto;
-    bottom: -35px;
+    bottom: 5px;
   }
 
   .strip-btn img{
@@ -962,6 +962,7 @@ section {
 
 .about-content{
   padding: 20px;
+  min-height: 240px;
 }
 
 .about-content h4{
@@ -1457,6 +1458,7 @@ section {
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .recentblogs-btn{
