@@ -1265,6 +1265,10 @@ section {
   margin: 0 auto;
 }
 
+.service-item{
+  background-color: #fff;
+}
+
 .service-left{
   padding: 60px 25px;
   background-color: pink;
