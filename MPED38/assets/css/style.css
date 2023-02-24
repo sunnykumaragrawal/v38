@@ -1199,7 +1199,7 @@ section {
 
 .resource-btn{
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: -300px;
   transition: all 0.5s ease-in-out;
 }
@@ -1209,19 +1209,7 @@ section {
 }
 
 .resource-btn a img{
-  max-height: 60px;
-}
-
-.resource-nav{
-  margin-top: 40px;
-}
-
-.resource-nav a{
-  font-size: 18px;
-  font-weight: 700;
-  background-color: white;
-  cursor: pointer;
-  padding: 15px 20px;
+  max-height: 50px;
 }
 
 @media(max-width: 767px){
@@ -1244,10 +1232,6 @@ section {
 
   .resource-btn a img{
     max-height: 30px;
-  }
-
-  .resource-nav{
-    margin-top: 20px;
   }
 }
 
@@ -1422,18 +1406,18 @@ section {
 }
 
 .insurance-carousel .owl-nav{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .insurance-carousel .owl-nav .owl-prev{
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-right: 15px;  
 }
 
 .insurance-carousel .owl-nav .owl-next{
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .insurance-carousel .owl-nav .owl-prev,

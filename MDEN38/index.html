@@ -274,13 +274,13 @@
     </section>
 
     <section id="resources" class="resources">
-      <div class="container">
+      <div class="container-fluid">
         <div class="section-title" data-aos="zoom-in">
           <span>Have Your Visit At Our *****</span>
           <h2>Patient Resource Center</h2>
         </div>
-        <div class="row" id="resource1">
-          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="100">
+        <div class="row px-lg-5">
+          <div class="col-lg-4 col-md-6 resource-block" data-aos="flip-down" data-aos-delay="100">
             <div class="resource-item">
               <img src="assets/img/resources/image1.webp" class="img-fluid">
               <h4>Request Forms</h4>
@@ -292,7 +292,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/requestform/" target="_blank"><img src="assets/img/arrow.png" class="img-fluid"></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 resource-block" data-aos="flip-down" data-aos-delay="200">
             <div class="resource-item">
               <img src="assets/img/resources/image2.webp" class="img-fluid">
               <h4>Update Demo</h4>
@@ -304,9 +304,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/updatedemo/" target="_blank"><img src="assets/img/arrow.png" class="img-fluid"></a>
             </div>
           </div>
-        </div>
-        <div class="row" id="resource2">
-          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 resource-block" data-aos="flip-down" data-aos-delay="300">
             <div class="resource-item">
               <img src="assets/img/resources/image3.webp" class="img-fluid">
               <h4>Authorization Release</h4>
@@ -320,7 +318,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank"><img src="assets/img/arrow.png" class="img-fluid" style="transform: rotate(90deg);" data-toggle="tooltip" title="Download Records"></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="400">
+          <div class="col-lg-4 col-md-6 resource-block" data-aos="flip-down" data-aos-delay="400">
             <div class="resource-item">
               <img src="assets/img/resources/image4.webp" class="img-fluid">
               <h4>New Patient Forms</h4>
@@ -332,7 +330,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/mdennewpt/" target="_blank"><img src="assets/img/arrow.png" class="img-fluid"></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="500">
+          <div class="col-lg-4 col-md-6 resource-block" data-aos="flip-down" data-aos-delay="500">
             <div class="resource-item">
               <img src="assets/img/resources/image5.webp" class="img-fluid">
               <h4>Book Appointment</h4>
@@ -344,7 +342,7 @@
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank"><img src="assets/img/arrow.png" class="img-fluid"></a>
             </div>
           </div>
-          <div class="col-lg-6 resource-block" data-aos="flip-down" data-aos-delay="600">
+          <div class="col-lg-4 col-md-6 resource-block" data-aos="flip-down" data-aos-delay="600">
             <div class="resource-item">
               <img src="assets/img/resources/image6.webp" class="img-fluid">
               <h4>Patient Portal</h4>
@@ -356,10 +354,6 @@
               <a href=""><img src="assets/img/arrow.png" class="img-fluid"></a>
             </div>
           </div>
-        </div>
-        <div class="row resource-nav" style="display: none;">
-          <div class="col-6"><a id="rn-left">Prev</a></div>
-          <div class="col-6 text-right"><a id="rn-right">Next</a></div>
         </div>
       </div>
     </section>
@@ -1303,23 +1297,6 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script type="text/javascript">
-     $(document).ready(function(){
-      $('#rn-right').css({"backgroundColor":"#2487ce","color":"white"});
-      $('#rn-right').click(function(){
-       $(this).css({"backgroundColor":"#2487ce","color":"white"});
-       $('#rn-left').css({"backgroundColor":"#fff","color":"black"});
-       $('#resource2').show();
-       $('#resource1').hide();
-     })
-      $('#rn-left').click(function(){
-       $(this).css({"backgroundColor":"#2487ce","color":"white"});
-       $('#rn-right').css({"backgroundColor":"#fff","color":"black"});
-       $('#resource1').show();
-       $('#resource2').hide();
-     })
-    })
-  </script>
 </body>
 
 </html>
